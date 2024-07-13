@@ -1,0 +1,11 @@
+<h1>Rate some cats!</h1>
+  <div>
+      <img src=<%= @pic["url"] %>>
+      <form action="/display_rate" method="post">
+        <label for="rate_input">Pic Rating</label>
+        <input id="rate_input" name="value"></input>
+        <input type="hidden" id="pic_id" name="id" value=<%= @pic["id"] %>>
+        <input type="hidden" id="pic_url" name="url" value=<%= @pic["url"] %>>
+        <button>Rate!</button>
+      </form>
+  </div>

@@ -1,0 +1,14 @@
+<h1>Your voting history</h1>
+
+<div class="history-container">
+  <% @history.each do |item| %>
+    <div>
+      <img src=<%= item["url"] %>>
+      <p>You rated this pic a <%= item["rating"] %></p>
+    </div>
+  <% end %>
+</div>
+
+<div>
+  <a href="/rate">Rate another pic!</a>
+</div>
