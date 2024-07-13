@@ -1,18 +1,2 @@
-# sinatra-template
-
-Use this repository to create new Sinatra apps. 
-
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+# Cat Pics Rate
+This website provides images of cats for visitors to rate. Simply enter a score from 1 to 10 and press submit to vote! Click on Vote History in the nav bar to view your voting history.
